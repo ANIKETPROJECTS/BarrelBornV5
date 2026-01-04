@@ -38,6 +38,11 @@ declare global {
 }
 
 import logoImg from "@assets/Untitled_design_(20)_1765720426678.png";
+import sangriaImg from "@assets/image_1767545808245.png";
+import classicCocktailsImg from "@assets/image_1767545845465.png";
+import signatureCocktailsImg from "@assets/image_1767545880130.png";
+import wineCocktailsImg from "@assets/image_1767545904457.png";
+import signatureShotsImg from "@assets/image_1767545936498.png";
 import mangaloreanImg from "@assets/image_1767538398708.png";
 import signatureMocktailsImg from "@assets/image_1765865243299.png";
 import softBeveragesImg from "@assets/image_1765865174044.png";
@@ -136,6 +141,12 @@ const subcategoryImages: Record<string, string> = {
   "pint-beers": pintBeerImg,
   "craft-beers-on-tap": craftBeerOnTapImg,
   "draught-beer": draughtBeerImg,
+  "sangria": sangriaImg,
+  "classic-cocktails": classicCocktailsImg,
+  "signature-cocktails": signatureCocktailsImg,
+  "wine-cocktails": wineCocktailsImg,
+  "signature-shots": signatureShotsImg,
+  "classic-shots": signatureShotsImg,
 };
 
 export default function CategorySelection() {
