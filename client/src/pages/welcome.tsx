@@ -84,9 +84,9 @@ export default function Welcome() {
         <button
           onClick={() => setLocation("/menu")}
           className="mt-7 px-10 py-3 font-semibold border-2 rounded-full transition-colors flex items-center gap-2 text-base"
-          style={{ borderColor: '#B8986A', color: '#dcd4c8', backgroundColor: 'transparent' }}
+          style={{ borderColor: '#B8986A', color: '#FFFFFF', backgroundColor: '#B8986A' }}
         >
-          <Utensils className="w-5 h-5" style={{ color: '#dcd4c8' }} />
+          <Utensils className="w-5 h-5" style={{ color: '#FFFFFF' }} />
           <span>EXPLORE OUR MENU</span>
         </button>
 
