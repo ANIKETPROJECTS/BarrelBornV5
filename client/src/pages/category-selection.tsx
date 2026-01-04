@@ -75,10 +75,10 @@ import biryaniImg from "@assets/image_1767540755506.png";
 import riceImg from "@assets/image_1765862832303.png";
 import dalsImg from "@assets/image_1767540786968.png";
 import breadsImg from "@assets/image_1767540967353.png";
-import asianMainsImg from "@assets/image_1767538522331.png";
+import asianMainsImg from "@assets/image_1767544426904.png";
+import thaiBowlsImg from "@assets/image_1767544482541.png";
+import riceNoodlesImg from "@assets/image_1767544566928.png";
 import continentalImg from "@assets/image_1767539626901.png";
-import thaiBowlsImg from "@assets/image_1765862959084.png";
-import riceNoodlesImg from "@assets/image_1765862986138.png";
 import sizzlersImg from "@assets/image_1765863042831.png";
 
 import pintBeerImg from "@assets/pint_beer_1766834179092.png";
@@ -128,6 +128,7 @@ const subcategoryImages: Record<string, string> = {
   "mini-burger-sliders": slidersImg,
   "indian-mains-curries": curriesImg,
   "biryanis-rice": biryaniImg,
+  "rice-with-curry---thai-asian-bowls": thaiBowlsImg,
   "thai-bowls": thaiBowlsImg,
   "rice-noodles": riceNoodlesImg,
   sizzlers: sizzlersImg,
