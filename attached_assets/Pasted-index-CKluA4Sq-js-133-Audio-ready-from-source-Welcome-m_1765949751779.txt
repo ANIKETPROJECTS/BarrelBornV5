@@ -1,0 +1,38 @@
+index-CKluA4Sq.js:133 Audio ready from source: /Welcome.mp3
+index-CKluA4Sq.js:133 Audio ready, waiting for user interaction...
+index-CKluA4Sq.js:133 FILTERING DEBUG: Object
+index-CKluA4Sq.js:133 Menu Items Query State: Object
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: Object
+index-CKluA4Sq.js:133 FILTERING DEBUG: Object
+index-CKluA4Sq.js:133 Menu Items Query State: Object
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: Object
+index-CKluA4Sq.js:133 FILTERING DEBUG: Object
+index-CKluA4Sq.js:133 Menu Items Query State: Object
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: Object
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'blended-whisky', totalItems: 0, filteringBy: 'blended-whisky'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'bar', subcategoryId: 'blended-whisky', mainCategory: undefined, currentSubcategory: 'blended-whisky', dbCategory: 'blended-whisky', …}
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'blended-whisky', totalItems: 0, filteringBy: 'blended-whisky'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'bar', subcategoryId: 'blended-whisky', mainCategory: undefined, currentSubcategory: 'blended-whisky', dbCategory: 'blended-whisky', …}
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'blended-whisky', totalItems: 0, filteringBy: 'blended-whisky'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: false, isError: true, error: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'bar', subcategoryId: 'blended-whisky', mainCategory: undefined, currentSubcategory: 'blended-whisky', dbCategory: 'blended-whisky', …}
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'american-irish-whiskey', totalItems: 0, filteringBy: 'american-irish-whiskey'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'bar', subcategoryId: 'american-irish-whiskey', mainCategory: undefined, currentSubcategory: 'american-irish-whiskey', dbCategory: 'american-irish-whiskey', …}
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'american-irish-whiskey', totalItems: 0, filteringBy: 'american-irish-whiskey'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'bar', subcategoryId: 'american-irish-whiskey', mainCategory: undefined, currentSubcategory: 'american-irish-whiskey', dbCategory: 'american-irish-whiskey', …}
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'american-irish-whiskey', totalItems: 0, filteringBy: 'american-irish-whiskey'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: false, isError: true, error: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'bar', subcategoryId: 'american-irish-whiskey', mainCategory: undefined, currentSubcategory: 'american-irish-whiskey', dbCategory: 'american-irish-whiskey', …}
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'nibbles', totalItems: 0, filteringBy: 'nibbles'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'food', subcategoryId: 'nibbles', mainCategory: undefined, currentSubcategory: 'nibbles', dbCategory: 'nibbles', …}
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'nibbles', totalItems: 0, filteringBy: 'nibbles'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'food', subcategoryId: 'nibbles', mainCategory: undefined, currentSubcategory: 'nibbles', dbCategory: 'nibbles', …}
+index-CKluA4Sq.js:133 FILTERING DEBUG: {dbCategory: 'nibbles', totalItems: 0, filteringBy: 'nibbles'}
+index-CKluA4Sq.js:133 Menu Items Query State: {isLoading: false, isError: true, error: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`, dataCount: 0, data: Array(0)}
+index-CKluA4Sq.js:133 DETAILED CATEGORY DEBUG: {categoryId: 'food', subcategoryId: 'nibbles', mainCategory: undefined, currentSubcategory: 'nibbles', dbCategory: 'nibbles', …}

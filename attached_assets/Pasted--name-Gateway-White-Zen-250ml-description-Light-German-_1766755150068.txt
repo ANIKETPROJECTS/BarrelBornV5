@@ -1,0 +1,801 @@
+[
+  {
+    "name": "Gateway White Zen (250ml)",
+    "description": "Light German style wheat beer - Top Seller",
+    "price": 265,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/gateway-white-zen.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Gateway White Zen (500ml)",
+    "description": "Light German style wheat beer - Top Seller",
+    "price": 485,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/gateway-white-zen.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Gateway White Zen (Pitcher)",
+    "description": "Light German style wheat beer - Top Seller",
+    "price": 1350,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/gateway-white-zen.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Gateway Doppelganger (250ml)",
+    "description": "Smooth German-style coffee stout",
+    "price": 265,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/gateway-doppelganger.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Gateway Doppelganger (500ml)",
+    "description": "Smooth German-style coffee stout",
+    "price": 485,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/gateway-doppelganger.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Gateway Doppelganger (Pitcher)",
+    "description": "Smooth German-style coffee stout",
+    "price": 1350,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/gateway-doppelganger.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Pilsner (250ml)",
+    "description": "Crisp, refreshing, easy-drinking",
+    "price": 235,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-pilsner.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Pilsner (500ml)",
+    "description": "Crisp, refreshing, easy-drinking",
+    "price": 410,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-pilsner.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Pilsner (Pitcher)",
+    "description": "Crisp, refreshing, easy-drinking",
+    "price": 1195,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-pilsner.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Belgian Golden Strong Ale (250ml)",
+    "description": "Fruity, Belgian-style",
+    "price": 235,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-belgian.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Belgian Golden Strong Ale (500ml)",
+    "description": "Fruity, Belgian-style",
+    "price": 410,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-belgian.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Belgian Golden Strong Ale (Pitcher)",
+    "description": "Fruity, Belgian-style",
+    "price": 1195,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-belgian.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 WC IPA (250ml)",
+    "description": "Hoppy, bold & aromatic - For hop lovers",
+    "price": 235,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-ipa.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 WC IPA (500ml)",
+    "description": "Hoppy, bold & aromatic - For hop lovers",
+    "price": 410,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-ipa.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 WC IPA (Pitcher)",
+    "description": "Hoppy, bold & aromatic - For hop lovers",
+    "price": 1195,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-ipa.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Hefeweizen (250ml)",
+    "description": "Smooth wheat beer with banana & clove notes",
+    "price": 235,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-hefeweizen.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Hefeweizen (500ml)",
+    "description": "Smooth wheat beer with banana & clove notes",
+    "price": 410,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-hefeweizen.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bira 91 Hefeweizen (Pitcher)",
+    "description": "Smooth wheat beer with banana & clove notes",
+    "price": 1195,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/bira-hefeweizen.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Basmati (250ml)",
+    "description": "Unique basmati aroma, super smooth",
+    "price": 245,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-basmati.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Basmati (500ml)",
+    "description": "Unique basmati aroma, super smooth",
+    "price": 460,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-basmati.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Basmati (Pitcher)",
+    "description": "Unique basmati aroma, super smooth",
+    "price": 1330,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-basmati.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Cream Stout (250ml)",
+    "description": "Dark, creamy, chocolate & coffee notes - Premium Choice",
+    "price": 245,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-stout.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Cream Stout (500ml)",
+    "description": "Dark, creamy, chocolate & coffee notes - Premium Choice",
+    "price": 460,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-stout.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Cream Stout (Pitcher)",
+    "description": "Dark, creamy, chocolate & coffee notes - Premium Choice",
+    "price": 1330,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-stout.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Kokam Cider (250ml)",
+    "description": "Tart, fruity cider with coastal kokam - Refreshing & unique",
+    "price": 245,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-kokam.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Kokam Cider (500ml)",
+    "description": "Tart, fruity cider with coastal kokam - Refreshing & unique",
+    "price": 460,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-kokam.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Drifter Kokam Cider (Pitcher)",
+    "description": "Tart, fruity cider with coastal kokam - Refreshing & unique",
+    "price": 1330,
+    "category": "craft-beers-on-tap",
+    "isVeg": true,
+    "image": "https://example.com/drifter-kokam.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Kingfisher Draught (330ml)",
+    "description": "Classic, smooth, perfect for sessions - Most Popular",
+    "price": 255,
+    "category": "draught-beer",
+    "isVeg": true,
+    "image": "https://example.com/kingfisher-draught.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Kingfisher Draught (500ml)",
+    "description": "Classic, smooth, perfect for sessions - Most Popular",
+    "price": 375,
+    "category": "draught-beer",
+    "isVeg": true,
+    "image": "https://example.com/kingfisher-draught.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Kingfisher Draught (Pitcher)",
+    "description": "Classic, smooth, perfect for sessions - Most Popular",
+    "price": 995,
+    "category": "draught-beer",
+    "isVeg": true,
+    "image": "https://example.com/kingfisher-draught.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Hoegaarden",
+    "description": "Belgian wheat beer, smooth & citrusy",
+    "price": 495,
+    "category": "pint-beers-imported-premium",
+    "isVeg": true,
+    "image": "https://example.com/hoegaarden.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Corona",
+    "description": "Light & crisp, best with lime",
+    "price": 495,
+    "category": "pint-beers-imported-premium",
+    "isVeg": true,
+    "image": "https://example.com/corona.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Kingfisher Strong",
+    "description": "Strong beer",
+    "price": 375,
+    "category": "pint-beers-strong",
+    "isVeg": true,
+    "image": "https://example.com/kingfisher-strong.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Budweiser Magnum",
+    "description": "Strong beer",
+    "price": 435,
+    "category": "pint-beers-strong",
+    "isVeg": true,
+    "image": "https://example.com/budweiser-magnum.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Carlsberg Elephant",
+    "description": "Strong beer",
+    "price": 375,
+    "category": "pint-beers-strong",
+    "isVeg": true,
+    "image": "https://example.com/carlsberg-elephant.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Budweiser",
+    "description": "Easy drinking beer",
+    "price": 345,
+    "category": "pint-beers-easy-drinking",
+    "isVeg": true,
+    "image": "https://example.com/budweiser.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Amstel Light",
+    "description": "Easy drinking beer",
+    "price": 375,
+    "category": "pint-beers-easy-drinking",
+    "isVeg": true,
+    "image": "https://example.com/amstel.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Carlsberg Smooth",
+    "description": "Easy drinking beer",
+    "price": 345,
+    "category": "pint-beers-easy-drinking",
+    "isVeg": true,
+    "image": "https://example.com/carlsberg-smooth.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Heineken",
+    "description": "Easy drinking beer",
+    "price": 345,
+    "category": "pint-beers-easy-drinking",
+    "isVeg": true,
+    "image": "https://example.com/heineken.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "KF Mild",
+    "description": "Value friendly beer",
+    "price": 275,
+    "category": "pint-beers-value",
+    "isVeg": true,
+    "image": "https://example.com/kf-mild.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "KF Ultra",
+    "description": "Value friendly beer",
+    "price": 325,
+    "category": "pint-beers-value",
+    "isVeg": true,
+    "image": "https://example.com/kf-ultra.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Tuborg Green",
+    "description": "Value friendly beer",
+    "price": 325,
+    "category": "pint-beers-value",
+    "isVeg": true,
+    "image": "https://example.com/tuborg-green.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Tuborg",
+    "description": "Value friendly beer",
+    "price": 325,
+    "category": "pint-beers-value",
+    "isVeg": true,
+    "image": "https://example.com/tuborg.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Peoples Lager (Bombay)",
+    "description": "Local craft-style lager",
+    "price": 405,
+    "category": "pint-beers-specials",
+    "isVeg": true,
+    "image": "https://example.com/peoples-lager.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Breezer",
+    "description": "Fruity, refreshing, low-alcohol",
+    "price": 350,
+    "category": "pint-beers-specials",
+    "isVeg": true,
+    "image": "https://example.com/breezer.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "LIIT",
+    "description": "Five white spirits, citrus & cola",
+    "price": 800,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/liit.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Mojito",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/mojito.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Martini",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/martini.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Manhattan",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/manhattan.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Cosmopolitan",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/cosmopolitan.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Pina Colada",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/pina-colada.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Margarita",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/margarita.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Moscow Mule",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/moscow-mule.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Old Fashioned",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/old-fashioned.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bloody Mary",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/bloody-mary.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Picante",
+    "description": "Classic cocktail",
+    "price": 650,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/picante.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Espresso Martini",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/espresso-martini.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Daiquiri",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/daiquiri.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Negroni",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/negroni.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Sidecar",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/sidecar.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Mai Tai",
+    "description": "Classic cocktail",
+    "price": 450,
+    "category": "classic-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/mai-tai.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Summer's Clarity",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/summers-clarity.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Azure Bloom",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/azure-bloom.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "The Gilded Fig",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/gilded-fig.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "The Mathri Merchant",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/mathri-merchant.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "The Tangent Trail",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/tangent-trail.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Highland Tropical",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/highland-tropical.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Midnight Nectar",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/midnight-nectar.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Indigo Bloom",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/indigo-bloom.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "The Crimson Glass",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/crimson-glass.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Black Sands Swizzle",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/black-sands.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "The Garden Fizz",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/garden-fizz.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "The Midnight Affogato",
+    "description": "Signature cocktail",
+    "price": 595,
+    "category": "signature-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/midnight-affogato.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "French 75",
+    "description": "Wine cocktail",
+    "price": 375,
+    "category": "wine-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/french-75.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Mimosa",
+    "description": "Wine cocktail",
+    "price": 375,
+    "category": "wine-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/mimosa.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Spritzer",
+    "description": "Wine cocktail",
+    "price": 375,
+    "category": "wine-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/spritzer.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Bellini",
+    "description": "Wine cocktail",
+    "price": 375,
+    "category": "wine-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/bellini.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Marilyn Monroe",
+    "description": "Wine cocktail",
+    "price": 375,
+    "category": "wine-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/marilyn-monroe.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Barrel Bucket",
+    "description": "Special wine cocktails, shareable & fun",
+    "price": 900,
+    "category": "wine-cocktails",
+    "isVeg": true,
+    "image": "https://example.com/barrel-bucket.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Red Sangria (Glass)",
+    "description": "Red wine sangria",
+    "price": 275,
+    "category": "sangria",
+    "isVeg": true,
+    "image": "https://example.com/red-sangria.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Red Sangria (Pitcher)",
+    "description": "Red wine sangria",
+    "price": 1200,
+    "category": "sangria",
+    "isVeg": true,
+    "image": "https://example.com/red-sangria.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "White Sangria (Glass)",
+    "description": "White wine sangria",
+    "price": 275,
+    "category": "sangria",
+    "isVeg": true,
+    "image": "https://example.com/white-sangria.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "White Sangria (Pitcher)",
+    "description": "White wine sangria",
+    "price": 1200,
+    "category": "sangria",
+    "isVeg": true,
+    "image": "https://example.com/white-sangria.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "7 Spirits Sangria (Glass)",
+    "description": "Sangria with seven spirits",
+    "price": 425,
+    "category": "sangria",
+    "isVeg": true,
+    "image": "https://example.com/7-spirits-sangria.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "7 Spirits Sangria (Pitcher)",
+    "description": "Sangria with seven spirits",
+    "price": 1700,
+    "category": "sangria",
+    "isVeg": true,
+    "image": "https://example.com/7-spirits-sangria.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Double Bubble (Glass)",
+    "description": "Special sangria",
+    "price": 425,
+    "category": "sangria",
+    "isVeg": true,
+    "image": "https://example.com/double-bubble.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Double Bubble (Pitcher)",
+    "description": "Special sangria",
+    "price": 1700,
+    "category": "sangria",
+    "isVeg": true,
+    "image": "https://example.com/double-bubble.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Kamikaze (Single)",
+    "description": "Shot",
+    "price": 350,
+    "category": "shots",
+    "isVeg": true,
+    "image": "https://example.com/kamikaze.jpg",
+    "isAvailable": true
+  },
+  {
+    "name": "Kamikaze (Six)",
+    "description": "Six shots",
+    "price": 1750,
+    "category": "shots",
+    "isVeg": true,
+    "image": "https://example.com/kamikaze.jpg",
+    "isAvailable": true
