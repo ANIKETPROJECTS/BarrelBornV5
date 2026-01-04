@@ -126,6 +126,8 @@ const subcategoryImages: Record<string, string> = {
   continental: continentalImg,
   "artisan-pizzas": pizzaImg,
   "mini-burger-sliders": slidersImg,
+  "indian-mains-curries": curriesImg,
+  "biryanis-rice": biryaniImg,
   "thai-bowls": thaiBowlsImg,
   "rice-noodles": riceNoodlesImg,
   sizzlers: sizzlersImg,
