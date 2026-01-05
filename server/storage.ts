@@ -119,38 +119,7 @@ export class MongoStorage implements IStorage {
         }
       }
 
-      // 2. Check 'restaurant_pos' database 'menuItems' collection
-      const posDb = this.client.db("restaurant_pos");
-      const normalizedCategory = category.toLowerCase().replace(/-/g, ' ');
-      const cleanCategory = category.toLowerCase().trim();
-      
-      // Match strategy: check category, subcategory, or fuzzy match name
-      const query = {
-        $or: [
-          { category: category },
-          { subcategory: category },
-          { "sub-category": category },
-          { category: cleanCategory },
-          { subcategory: cleanCategory },
-          { "sub-category": cleanCategory },
-          { category: new RegExp(`^${normalizedCategory}$`, 'i') },
-          { subcategory: new RegExp(`^${normalizedCategory}$`, 'i') },
-          { "sub-category": new RegExp(`^${normalizedCategory}$`, 'i') },
-          { category: new RegExp(normalizedCategory, 'i') },
-          { subcategory: new RegExp(normalizedCategory, 'i') },
-          { "sub-category": new RegExp(normalizedCategory, 'i') },
-          { name: new RegExp(category.split('-')[0], 'i') }
-        ]
-      };
-
-      const posItems = await posDb.collection("menuItems").find(query).toArray();
-
-      if (posItems.length > 0) {
-        console.log(`[Storage] Found ${posItems.length} items in restaurant_pos.menuItems for ${category}`);
-        return this.sortMenuItems(posItems.map(item => ({ ...item, category })));
-      }
-
-      // 3. Last-ditch search: Look for items with the category in THEIR name or description
+      // 2. Last-ditch search: Look for items with the category in THEIR name or description across barrelborn collections
       const dbCollections = await this.db.listCollections().toArray();
       const allMatches: MenuItem[] = [];
       for (const collInfo of dbCollections) {
@@ -161,7 +130,7 @@ export class MongoStorage implements IStorage {
             { description: new RegExp(category.replace(/-/g, ' '), 'i') }
           ]
         }).toArray();
-        if (matches.length > 0) allMatches.push(...matches.map(m => ({ ...m, category })));
+        if (matches.length > 0) allMatches.push(...matches.map(m => ({ ...m, category: collInfo.name })));
       }
       
       if (allMatches.length > 0) return this.sortMenuItems(allMatches);
