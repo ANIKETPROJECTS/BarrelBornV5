@@ -90,41 +90,56 @@ export class MongoStorage implements IStorage {
   async getMenuItemsByCategory(category: string): Promise<MenuItem[]> {
     console.log(`[Storage] Fetching items for category: ${category}`);
     try {
-      // Direct collection fetch for the requested category
-      const collection = this.db.collection(category) as Collection<MenuItem>;
-      const items = await collection.find({}).toArray();
+      // 1. Check current DB ('barrelborn') for a direct collection match
+      let collection = this.db.collection(category) as Collection<MenuItem>;
+      let items = await collection.find({}).toArray();
       
       if (items.length > 0) {
-        console.log(`[Storage] Found ${items.length} items in collection: ${category}`);
-        return this.sortMenuItems(items.map(item => ({
-          ...item,
-          category: item.category || category
-        })));
+        console.log(`[Storage] Found ${items.length} items in barrelborn.${category}`);
+        return this.sortMenuItems(items.map(item => ({ ...item, category })));
       }
 
-      console.log(`[Storage] No items found in direct collection: ${category}. Searching all collections...`);
+      // 2. Check 'restaurant_pos' database 'menuItems' collection
+      const posDb = this.client.db("restaurant_pos");
+      const normalizedCategory = category.toLowerCase().replace(/-/g, ' ');
       
-      // If not found in the direct collection, search across all collections
-      // This handles cases where items might be mis-categorized in the DB
+      // Match strategy: check category, subcategory, or fuzzy match name
+      const query = {
+        $or: [
+          { category: category },
+          { subcategory: category },
+          { "sub-category": category },
+          { category: new RegExp(normalizedCategory, 'i') },
+          { subcategory: new RegExp(normalizedCategory, 'i') },
+          { "sub-category": new RegExp(normalizedCategory, 'i') },
+          { name: new RegExp(category.split('-')[0], 'i') }
+        ]
+      };
+
+      const posItems = await posDb.collection("menuItems").find(query).toArray();
+
+      if (posItems.length > 0) {
+        console.log(`[Storage] Found ${posItems.length} items in restaurant_pos.menuItems for ${category}`);
+        return this.sortMenuItems(posItems.map(item => ({ ...item, category })));
+      }
+
+      // 3. Last-ditch search: Look for items with the category in THEIR name or description
       const dbCollections = await this.db.listCollections().toArray();
       const allMatches: MenuItem[] = [];
-      
       for (const collInfo of dbCollections) {
         const coll = this.db.collection(collInfo.name) as Collection<MenuItem>;
         const matches = await coll.find({
           $or: [
-            { category: category },
-            { subcategory: category },
-            { "sub-category": category }
+            { name: new RegExp(category.replace(/-/g, ' '), 'i') },
+            { description: new RegExp(category.replace(/-/g, ' '), 'i') }
           ]
         }).toArray();
-        
-        if (matches.length > 0) {
-          allMatches.push(...matches.map(m => ({ ...m, category })));
-        }
+        if (matches.length > 0) allMatches.push(...matches.map(m => ({ ...m, category })));
       }
+      
+      if (allMatches.length > 0) return this.sortMenuItems(allMatches);
 
-      return this.sortMenuItems(allMatches);
+      return [];
     } catch (error) {
       console.error(`[Storage] Error fetching items for ${category}:`, error);
       return [];
