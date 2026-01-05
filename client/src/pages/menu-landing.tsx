@@ -20,22 +20,22 @@ import logoImg from "@assets/Untitled_design_(20)_1765720426678.png";
 import fallbackImg from "@assets/coming_soon_imagev2_1766811809828.jpg";
 
 // @ts-ignore
-import promo1 from "@assets/1_1766732327396.JPG";
+import promo1 from "@assets/1_1_11zon_1767593666240.jpg";
 // @ts-ignore
-import promo2 from "@assets/2_1766732327396.JPG";
+import promo2 from "@assets/2_2_11zon_1767593666237.jpg";
 // @ts-ignore
-import promo3 from "@assets/3_1766732327397.JPG";
+import promo3 from "@assets/3_3_11zon_1767593666238.jpg";
 // @ts-ignore
-import promo4 from "@assets/4_1766732327397.JPG";
+import promo4 from "@assets/4_4_11zon_1767593666239.jpg";
 // @ts-ignore
-import promo5 from "@assets/5_1766732327395.JPG";
+import promo5 from "@assets/5_5_11zon_1767593666239.jpg";
 
 const promotionalImages = [
-  { id: 1, src: promo5, alt: "Restaurant Interior" },
-  { id: 2, src: promo1, alt: "Bar & Dining Area" },
-  { id: 3, src: promo2, alt: "Modern Ambiance" },
-  { id: 4, src: promo3, alt: "Contemporary Dining" },
-  { id: 5, src: promo4, alt: "Elegant Seating" },
+  { id: 1, src: promo1, alt: "Restaurant Interior" },
+  { id: 2, src: promo2, alt: "Bar & Dining Area" },
+  { id: 3, src: promo3, alt: "Modern Ambiance" },
+  { id: 4, src: promo4, alt: "Contemporary Dining" },
+  { id: 5, src: promo5, alt: "Elegant Seating" },
 ];
 
 const categoryImages: Record<string, string> = {
