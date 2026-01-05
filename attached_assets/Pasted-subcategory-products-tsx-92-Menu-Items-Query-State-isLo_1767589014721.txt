@@ -1,0 +1,14 @@
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: false, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'crafted-beer', subcategoryId: 'craft-beers-on-tap', mainCategory: 'CRAFT BEERS', currentSubcategory: 'craft-beers-on-tap', dbCategory: 'craft-beers-on-tap', …}
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'crafted-beer', subcategoryId: 'draught-beer', mainCategory: 'CRAFT BEERS', currentSubcategory: 'draught-beer', dbCategory: 'draught-beer', …}
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'crafted-beer', subcategoryId: 'draught-beer', mainCategory: 'CRAFT BEERS', currentSubcategory: 'draught-beer', dbCategory: 'draught-beer', …}
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: false, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'crafted-beer', subcategoryId: 'draught-beer', mainCategory: 'CRAFT BEERS', currentSubcategory: 'draught-beer', dbCategory: 'draught-beer', …}
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'crafted-beer', subcategoryId: 'pint-beers', mainCategory: 'CRAFT BEERS', currentSubcategory: 'pint-beers', dbCategory: 'pint-beers', …}
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'crafted-beer', subcategoryId: 'pint-beers', mainCategory: 'CRAFT BEERS', currentSubcategory: 'pint-beers', dbCategory: 'pint-beers', …}
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: false, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'crafted-beer', subcategoryId: 'pint-beers', mainCategory: 'CRAFT BEERS', currentSubcategory: 'pint-beers', dbCategory: 'pint-beers', …}

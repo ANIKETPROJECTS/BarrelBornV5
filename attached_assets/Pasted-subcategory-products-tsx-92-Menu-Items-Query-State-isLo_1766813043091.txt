@@ -1,0 +1,47 @@
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'cocktails', subcategoryId: 'signature-cocktails', mainCategory: 'COCKTAILS', currentSubcategory: 'signature-cocktails', dbCategory: 'signature-cocktails', …}
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: true, isError: false, error: undefined, dataCount: 0, data: Array(0)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'cocktails', subcategoryId: 'signature-cocktails', mainCategory: 'COCKTAILS', currentSubcategory: 'signature-cocktails', dbCategory: 'signature-cocktails', …}
+subcategory-products.tsx:92 Menu Items Query State: {isLoading: false, isError: false, error: undefined, dataCount: 12, data: Array(12)}
+subcategory-products.tsx:124 DETAILED CATEGORY DEBUG: {categoryId: 'cocktails', subcategoryId: 'signature-cocktails', mainCategory: 'COCKTAILS', currentSubcategory: 'signature-cocktails', dbCategory: 'signature-cocktails', …}
+via.placeholder.com/300x200?text=Menu+Item:1  GET https://via.placeholder.com/300x200?text=Menu+Item net::ERR_NAME_NOT_RESOLVED
+Image
+commitMount @ chunk-WERSD76P.js?v=4c1044d2:8412
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=4c1044d2:17102
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=4c1044d2:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=4c1044d2:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=4c1044d2:17920
+commitRootImpl @ chunk-WERSD76P.js?v=4c1044d2:19353
+commitRoot @ chunk-WERSD76P.js?v=4c1044d2:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=4c1044d2:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=4c1044d2:9119
+(anonymous) @ chunk-WERSD76P.js?v=4c1044d2:18627
+setTimeout
+defaultScheduler @ @tanstack_react-query.js?v=4c1044d2:565
+flush @ @tanstack_react-query.js?v=4c1044d2:589
+batch @ @tanstack_react-query.js?v=4c1044d2:607
+dispatch_fn @ @tanstack_react-query.js?v=4c1044d2:1040
+setData @ @tanstack_react-query.js?v=4c1044d2:718
+onSuccess @ @tanstack_react-query.js?v=4c1044d2:940
+resolve @ @tanstack_react-query.js?v=4c1044d2:475
+Promise.then
+run @ @tanstack_react-query.js?v=4c1044d2:517
+start @ @tanstack_react-query.js?v=4c1044d2:555
+fetch @ @tanstack_react-query.js?v=4c1044d2:969
+executeFetch_fn @ @tanstack_react-query.js?v=4c1044d2:2280
+onSubscribe @ @tanstack_react-query.js?v=4c1044d2:1983
+subscribe @ @tanstack_react-query.js?v=4c1044d2:24
+(anonymous) @ @tanstack_react-query.js?v=4c1044d2:3147
+subscribeToStore @ chunk-WERSD76P.js?v=4c1044d2:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=4c1044d2:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=4c1044d2:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=4c1044d2:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=4c1044d2:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=4c1044d2:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=4c1044d2:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=4c1044d2:19447
+commitRootImpl @ chunk-WERSD76P.js?v=4c1044d2:19416
+commitRoot @ chunk-WERSD76P.js?v=4c1044d2:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=4c1044d2:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=4c1044d2:9119
+(anonymous) @ chunk-WERSD76P.js?v=4c1044d2:18627
