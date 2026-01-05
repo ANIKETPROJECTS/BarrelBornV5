@@ -269,15 +269,27 @@ export class MongoStorage implements IStorage {
       const dbCollections = await this.db.listCollections().toArray();
       const allMenuItems: MenuItem[] = [];
       
+      const beerKeywords: Record<string, string[]> = {
+        'craft-beers-on-tap': ['craft', 'tap', 'on tap'],
+        'draught-beer': ['draught', 'draft'],
+        'pint-beers': ['pint']
+      };
+
       for (const collInfo of dbCollections) {
         const coll = this.db.collection(collInfo.name) as Collection<MenuItem>;
-        // Case-insensitive search for category field
-        const items = await coll.find({ 
-          $or: [
-            { category: { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } },
-            { name: { $regex: new RegExp(`${normalizedCategory.replace(/-/g, ' ')}`, 'i') } }
-          ]
-        }).toArray();
+        
+        const searchConditions: any[] = [
+          { category: { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } }
+        ];
+
+        // Add keyword matching for beer categories
+        if (beerKeywords[normalizedCategory]) {
+          beerKeywords[normalizedCategory].forEach(keyword => {
+            searchConditions.push({ name: { $regex: new RegExp(keyword, 'i') } });
+          });
+        }
+
+        const items = await coll.find({ $or: searchConditions }).toArray();
         
         if (items.length > 0) {
           console.log(`[Storage] Found ${items.length} items in collection ${collInfo.name} for category ${normalizedCategory}`);
