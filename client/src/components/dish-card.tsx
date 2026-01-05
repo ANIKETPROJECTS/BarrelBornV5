@@ -9,7 +9,12 @@ interface DishCardProps {
 
 export default function DishCard({ item }: DishCardProps) {
   const [imgError, setImgError] = useState(false);
-  const imageUrl = imgError || !item.image || item.image.includes("example.com") ? fallbackImg : item.image;
+  const imageUrl = imgError || !item.image || 
+    item.image.includes("example.com") || 
+    item.image.includes("unsplash.com") ||
+    item.image.includes("placeholder.com") ||
+    item.image.includes("via.placeholder.com")
+    ? fallbackImg : item.image;
 
   return (
     <motion.div

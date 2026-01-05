@@ -11,6 +11,7 @@ export default function ProductCard({ item }: ProductCardProps) {
   const [imgError, setImgError] = useState(false);
   const isBrokenImage = imgError || !item.image || 
     item.image.includes("example.com") || 
+    item.image.includes("unsplash.com") ||
     item.image.includes("via.placeholder.com") ||
     item.image.includes("placeholder.com");
   const imageUrl = isBrokenImage ? fallbackImg : item.image;
