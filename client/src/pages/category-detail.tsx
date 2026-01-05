@@ -142,6 +142,8 @@ export default function CategoryDetail() {
 
   const { data: menuItems = [], isLoading } = useQuery<MenuItem[]>({
     queryKey: ["/api/menu-items"],
+    staleTime: 5 * 60 * 1000,
+    retry: 3,
   });
 
   useEffect(() => {

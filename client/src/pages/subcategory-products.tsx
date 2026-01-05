@@ -79,7 +79,10 @@ export default function SubcategoryProducts() {
       const response = await fetch(`/api/menu-items?category=${encodeURIComponent(subcategoryId)}`);
       if (!response.ok) throw new Error('Failed to fetch');
       return response.json();
-    }
+    },
+    staleTime: 5 * 60 * 1000, // 5 minutes
+    retry: 3,
+    retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 10000),
   });
   
   const { data: menuItems = [], isLoading, error, isError } = itemsQuery;

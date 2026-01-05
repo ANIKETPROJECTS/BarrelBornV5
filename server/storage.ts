@@ -99,6 +99,26 @@ export class MongoStorage implements IStorage {
         return this.sortMenuItems(items.map(item => ({ ...item, category })));
       }
 
+      // 1.1 Try matching with hyphens replaced by spaces or other common separators
+      const variations = [
+        category,
+        category.replace(/-/g, ' '),
+        category.replace(/-/g, '&'),
+        category.replace(/-/g, ' & '),
+        category.replace(/&/g, '-'),
+        category.replace(/ /g, '-')
+      ];
+
+      for (const variant of Array.from(new Set(variations))) {
+        if (variant === category) continue;
+        const variantColl = this.db.collection(variant) as Collection<MenuItem>;
+        const variantItems = await variantColl.find({}).toArray();
+        if (variantItems.length > 0) {
+          console.log(`[Storage] Found ${variantItems.length} items in barrelborn collection variation: ${variant}`);
+          return this.sortMenuItems(variantItems.map(item => ({ ...item, category: variant })));
+        }
+      }
+
       // 2. Check 'restaurant_pos' database 'menuItems' collection
       const posDb = this.client.db("restaurant_pos");
       const normalizedCategory = category.toLowerCase().replace(/-/g, ' ');
@@ -109,6 +129,9 @@ export class MongoStorage implements IStorage {
           { category: category },
           { subcategory: category },
           { "sub-category": category },
+          { category: new RegExp(`^${normalizedCategory}$`, 'i') },
+          { subcategory: new RegExp(`^${normalizedCategory}$`, 'i') },
+          { "sub-category": new RegExp(`^${normalizedCategory}$`, 'i') },
           { category: new RegExp(normalizedCategory, 'i') },
           { subcategory: new RegExp(normalizedCategory, 'i') },
           { "sub-category": new RegExp(normalizedCategory, 'i') },
