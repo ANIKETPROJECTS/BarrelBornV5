@@ -122,6 +122,7 @@ export class MongoStorage implements IStorage {
       // 2. Check 'restaurant_pos' database 'menuItems' collection
       const posDb = this.client.db("restaurant_pos");
       const normalizedCategory = category.toLowerCase().replace(/-/g, ' ');
+      const cleanCategory = category.toLowerCase().trim();
       
       // Match strategy: check category, subcategory, or fuzzy match name
       const query = {
@@ -129,6 +130,9 @@ export class MongoStorage implements IStorage {
           { category: category },
           { subcategory: category },
           { "sub-category": category },
+          { category: cleanCategory },
+          { subcategory: cleanCategory },
+          { "sub-category": cleanCategory },
           { category: new RegExp(`^${normalizedCategory}$`, 'i') },
           { subcategory: new RegExp(`^${normalizedCategory}$`, 'i') },
           { "sub-category": new RegExp(`^${normalizedCategory}$`, 'i') },
