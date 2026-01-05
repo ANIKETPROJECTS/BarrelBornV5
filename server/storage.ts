@@ -30,67 +30,16 @@ export class MongoStorage implements IStorage {
   private restaurantId: ObjectId;
 
   private readonly categories = [
-    "nibbles",
-    "soups",
-    "titbits",
-    "salads",
-    "mangalorean-style",
-    "wok",
-    "charcoal",
-    "continental",
-    "pasta",
-    "artisan-pizzas",
-    "mini-burger-sliders",
-    "entree-(main-course)",
-    "bao-&-dim-sum",
-    "indian-mains---curries",
-    "biryanis-&-rice",
-    "dals",
-    "breads",
-    "asian-mains",
-    "rice-with-curry---thai-&-asian-bowls",
-    "rice-&-noodles",
-    "desserts",
-    "blended-whisky",
-    "blended-scotch-whisky",
-    "american-irish-whiskey",
-    "single-malt-whisky",
-    "vodka",
-    "gin",
-    "rum",
-    "tequila",
-    "cognac-brandy",
-    "liqueurs",
-    "sparkling-wine",
-    "white-wines",
-    "rose-wines",
-    "red-wines",
-    "dessert-wines",
-    "port-wine",
-    "signature-mocktails",
-    "soft-beverages",
-    "craft-beers-on-tap",
-    "draught-beer",
-    "pint-beers",
-    "classic-cocktails",
-    "signature-cocktails",
-    "wine-cocktails",
-    "sangria",
-    "signature-shots",
-    "indian-mains---curries",
-    "biryanis-rice",
-    "bao-dimsum",
-    "entree",
-    "rice-with-curry---thai-asian-bowls",
-    "oriental-starters",
-    "sizzlers",
-    "pizza",
-    "rice-noodles",
-    "gin",
-    "rum",
-    "vodka",
-    "tequila",
-    "liqueurs",
+    "nibbles", "soups", "titbits", "salads", "mangalorean-style", "wok", "charcoal", 
+    "continental", "pasta", "artisan-pizzas", "mini-burger-sliders", "entree-(main-course)", 
+    "bao-&-dim-sum", "indian-mains---curries", "biryanis-&-rice", "dals", "breads", 
+    "asian-mains", "rice-with-curry---thai-&-asian-bowls", "rice-&-noodles", "desserts", 
+    "blended-whisky", "blended-scotch-whisky", "american-irish-whiskey", "single-malt-whisky", 
+    "vodka", "gin", "rum", "tequila", "cognac-brandy", "liqueurs", "sparkling-wine", 
+    "white-wines", "rose-wines", "red-wines", "dessert-wines", "port-wine", 
+    "signature-mocktails", "soft-beverages", "craft-beers-on-tap", "draught-beer", 
+    "pint-beers", "classic-cocktails", "signature-cocktails", "wine-cocktails", 
+    "sangria", "signature-shots"
   ];
 
   constructor(connectionString: string) {
@@ -98,70 +47,8 @@ export class MongoStorage implements IStorage {
     this.db = this.client.db("barrelborn");
     this.categoryCollections = new Map();
 
-    const categoryCollectionMapping: Record<string, string> = {
-      'nibbles': 'nibbles',
-      'soups': 'soups',
-      'titbits': 'titbits',
-      'salads': 'salads',
-      'mangalorean-style': 'mangalorean-style',
-      'wok': 'wok',
-      'charcoal': 'charcoal',
-      'continental': 'continental',
-      'pasta': 'pasta',
-      'artisan-pizzas': 'artisan-pizzas',
-      'mini-burger-sliders': 'mini-burger-sliders',
-      'entree-(main-course)': 'entree-(main-course)',
-      'bao-&-dim-sum': 'bao-&-dim-sum',
-      'indian-mains-curries': 'indian-mains-curries',
-      'indian-mains---curries': 'indian-mains-curries',
-      'biryanis-&-rice': 'biryanis-&-rice',
-      'dals': 'dals',
-      'breads': 'breads',
-      'asian-mains': 'asian-mains',
-      'rice-with-curry---thai-&-asian-bowls': 'rice-with-curry---thai-&-asian-bowls',
-      'rice-&-noodles': 'rice-&-noodles',
-      'desserts': 'desserts',
-      'blended-whisky': 'blended-whisky',
-      'blended-scotch-whisky': 'blended-scotch-whisky',
-      'american-irish-whiskey': 'american-irish-whiskey',
-      'single-malt-whisky': 'single-malt-whisky',
-      'vodka': 'vodka',
-      'gin': 'gin',
-      'rum': 'rum',
-      'tequila': 'tequila',
-      'cognac-brandy': 'cognac-brandy',
-      'liqueurs': 'liqueurs',
-      'sparkling-wine': 'sparkling-wine',
-      'white-wines': 'white-wines',
-      'rose-wines': 'rose-wines',
-      'red-wines': 'red-wines',
-      'dessert-wines': 'dessert-wines',
-      'port-wine': 'port-wine',
-      'signature-mocktails': 'signature-mocktails',
-      'soft-beverages': 'soft-beverages',
-      'craft-beers-on-tap': 'craft-beers-on-tap',
-      'draught-beer': 'draught-beer',
-      'pint-beers': 'pint-beers',
-      'classic-cocktails': 'classic-cocktails',
-      'signature-cocktails': 'signature-cocktails',
-      'wine-cocktails': 'wine-cocktails',
-      'sangria': 'sangria',
-      'signature-shots': 'signature-shots',
-      'biryanis-rice': 'biryanis-rice',
-      'bao-dimsum': 'bao-dimsum',
-      'entree': 'entree',
-      'rice-with-curry---thai-asian-bowls': 'rice-with-curry---thai-asian-bowls',
-      'oriental-starters': 'oriental-starters',
-      'sizzlers': 'sizzlers',
-      'pizza': 'pizza',
-      'rice-noodles': 'rice-noodles',
-    };
-
     this.categories.forEach(category => {
-      const collectionName = categoryCollectionMapping[category];
-      if (collectionName) {
-        this.categoryCollections.set(category, this.db.collection(collectionName));
-      }
+      this.categoryCollections.set(category, this.db.collection(category));
     });
 
     this.cartItemsCollection = this.db.collection("cartitems");
@@ -202,150 +89,44 @@ export class MongoStorage implements IStorage {
 
   async getMenuItemsByCategory(category: string): Promise<MenuItem[]> {
     console.log(`[Storage] Fetching items for category: ${category}`);
-    
-    // Normalize category name for matching
-    const normalizedCategory = category.toLowerCase().trim();
-    
-    // Check our explicit mapping first
-    const mappedCollectionName = Array.from(this.categoryCollections.entries())
-      .find(([key]) => key.toLowerCase().trim() === normalizedCategory)?.[1];
-    
-    let collection: Collection<MenuItem>;
-    
-    if (mappedCollectionName) {
-      collection = mappedCollectionName;
-    } else {
-      console.log(`[Storage] Category ${normalizedCategory} not found in pre-defined map, searching by name...`);
-      collection = this.db.collection(normalizedCategory) as Collection<MenuItem>;
-    }
-
     try {
-      // Step 0: Check the direct collection first (fastest)
-      console.log(`[Storage] Checking direct collection: ${normalizedCategory}...`);
-      const directItems = await collection.find({}).toArray();
+      // Direct collection fetch for the requested category
+      const collection = this.db.collection(category) as Collection<MenuItem>;
+      const items = await collection.find({}).toArray();
       
-      if (directItems.length > 0) {
-        console.log(`[Storage] Found ${directItems.length} items in collection ${normalizedCategory}`);
-        
-        // Ensure items have the category property set correctly for the frontend
-        const itemsWithCategory = directItems.map(item => ({
+      if (items.length > 0) {
+        console.log(`[Storage] Found ${items.length} items in collection: ${category}`);
+        return this.sortMenuItems(items.map(item => ({
           ...item,
-          category: item.category || normalizedCategory
-        }));
-        
-        return this.sortMenuItems(itemsWithCategory);
+          category: item.category || category
+        })));
       }
 
-      // Special handling for beer categories if not found in direct collection
-      const beerCategories = ['craft-beers-on-tap', 'draught-beer', 'pint-beers'];
-      if (beerCategories.includes(normalizedCategory)) {
-        console.log(`[Storage] Checking for beer items in 'beers' collection...`);
-        const beersColl = this.db.collection('beers') as Collection<MenuItem>;
-        const beerItems = await beersColl.find({ 
-          category: { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } 
-        }).toArray();
-        
-        if (beerItems.length > 0) {
-          console.log(`[Storage] Found ${beerItems.length} beer items in 'beers' collection`);
-          return this.sortMenuItems(beerItems);
-        }
-      }
-
-      // Step 0.1: Try a fallback for common variations
-      if (normalizedCategory === 'pizza') {
-        console.log(`[Storage] Trying fallback collection 'artisan-pizzas' for 'pizza'...`);
-        const pizzaColl = this.db.collection('artisan-pizzas') as Collection<MenuItem>;
-        const pizzaItems = await pizzaColl.find({}).toArray();
-        if (pizzaItems.length > 0) {
-          console.log(`[Storage] Found ${pizzaItems.length} items in 'artisan-pizzas'`);
-          return this.sortMenuItems(pizzaItems.map(item => ({ ...item, category: 'pizza' })));
-        }
-      }
-
-      // Step 1: Search across ALL collections for items with this category field
-      console.log(`[Storage] Searching across all collections for category: ${normalizedCategory}...`);
+      console.log(`[Storage] No items found in direct collection: ${category}. Searching all collections...`);
       
-      // Get all collection names from the database
+      // If not found in the direct collection, search across all collections
+      // This handles cases where items might be mis-categorized in the DB
       const dbCollections = await this.db.listCollections().toArray();
-      const allMenuItems: MenuItem[] = [];
+      const allMatches: MenuItem[] = [];
       
-      const beerKeywords: Record<string, string[]> = {
-        'craft-beers-on-tap': ['craft', 'tap', 'on tap'],
-        'draught-beer': ['draught', 'draft'],
-        'pint-beers': ['pint']
-      };
-
       for (const collInfo of dbCollections) {
         const coll = this.db.collection(collInfo.name) as Collection<MenuItem>;
-        
-        const searchConditions: any[] = [
-          { category: { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } },
-          { subcategory: { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } },
-          { "sub-category": { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } }
-        ];
-
-        // Add keyword matching for beer categories
-        if (beerKeywords[normalizedCategory]) {
-          beerKeywords[normalizedCategory].forEach(keyword => {
-            searchConditions.push({ name: { $regex: new RegExp(keyword, 'i') } });
-          });
-        }
-
-        const items = await coll.find({ $or: searchConditions }).toArray();
-        
-        if (items.length > 0) {
-          console.log(`[Storage] Found ${items.length} items in collection ${collInfo.name} for category ${normalizedCategory}`);
-          allMenuItems.push(...items.map(item => ({
-            ...item,
-            category: normalizedCategory // Ensure it matches what frontend expects
-          })));
-        }
-      }
-
-      // Final fallback: If still no items, and it's a beer category, return high-quality mock data
-      if (allMenuItems.length === 0 && (normalizedCategory.includes('beer') || normalizedCategory.includes('draught') || normalizedCategory.includes('pint'))) {
-        console.log(`[Storage] CRITICAL: No beer data found in DB for ${normalizedCategory}. Providing high-quality fallback data.`);
-        
-        const beerData = {
-          'craft-beers-on-tap': [
-            { name: "Toit Tintin-In-Belgium", description: "A classic Belgian Witbier with coriander and orange peel notes.", price: "325", image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13" },
-            { name: "Toit Weiss Guy", description: "Traditional Bavarian Hefeweizen with banana and clove aromas.", price: "325", image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13" },
-            { name: "Toit Basmati Blonde", description: "A light, refreshing blonde ale brewed with basmati rice.", price: "325", image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13" }
-          ],
-          'draught-beer': [
-            { name: "Kingfisher Draught", description: "Fresh and crisp draught beer served chilled.", price: "245", image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13" },
-            { name: "Budweiser Draught", description: "The King of Beers, fresh from the tap.", price: "285", image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13" }
-          ],
-          'pint-beers': [
-            { name: "Corona Extra", description: "The classic Mexican lager, served with a wedge of lime.", price: "450", image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13" },
-            { name: "Heineken", description: "Premium Dutch lager with a characteristic balanced taste.", price: "350", image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13" },
-            { name: "Budweiser Premium", description: "Classic American style lager pint.", price: "250", image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13" }
+        const matches = await coll.find({
+          $or: [
+            { category: category },
+            { subcategory: category },
+            { "sub-category": category }
           ]
-        };
-
-        const categoryData = (beerData as any)[normalizedCategory] || beerData['pint-beers'];
+        }).toArray();
         
-        return categoryData.map((item: any) => ({
-          ...item,
-          _id: new ObjectId(),
-          category: normalizedCategory,
-          isVeg: true,
-          isAvailable: true,
-          restaurantId: this.restaurantId,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-          __v: 0
-        })) as MenuItem[];
+        if (matches.length > 0) {
+          allMatches.push(...matches.map(m => ({ ...m, category })));
+        }
       }
 
-      if (allMenuItems.length > 0) {
-        console.log(`[Storage] Total found ${allMenuItems.length} items for ${normalizedCategory}`);
-        return this.sortMenuItems(allMenuItems);
-      }
-
-      return [];
+      return this.sortMenuItems(allMatches);
     } catch (error) {
-      console.error(`[Storage] Error fetching items for ${normalizedCategory}:`, error);
+      console.error(`[Storage] Error fetching items for ${category}:`, error);
       return [];
     }
   }
@@ -364,8 +145,7 @@ export class MongoStorage implements IStorage {
   }
 
   async addMenuItem(item: InsertMenuItem): Promise<MenuItem> {
-    const collection = this.categoryCollections.get(item.category);
-    if (!collection) throw new Error(`Category "${item.category}" not found`);
+    const collection = this.db.collection(item.category);
     const now = new Date();
     const menuItem = { ...item, restaurantId: this.restaurantId, createdAt: now, updatedAt: now, __v: 0 };
     const result = await collection.insertOne(menuItem as any);
