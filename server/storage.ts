@@ -236,6 +236,21 @@ export class MongoStorage implements IStorage {
         return this.sortMenuItems(itemsWithCategory);
       }
 
+      // Special handling for beer categories if not found in direct collection
+      const beerCategories = ['craft-beers-on-tap', 'draught-beer', 'pint-beers'];
+      if (beerCategories.includes(normalizedCategory)) {
+        console.log(`[Storage] Checking for beer items in 'beers' collection...`);
+        const beersColl = this.db.collection('beers') as Collection<MenuItem>;
+        const beerItems = await beersColl.find({ 
+          category: { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } 
+        }).toArray();
+        
+        if (beerItems.length > 0) {
+          console.log(`[Storage] Found ${beerItems.length} beer items in 'beers' collection`);
+          return this.sortMenuItems(beerItems);
+        }
+      }
+
       // Step 0.1: Try a fallback for common variations
       if (normalizedCategory === 'pizza') {
         console.log(`[Storage] Trying fallback collection 'artisan-pizzas' for 'pizza'...`);
@@ -258,7 +273,10 @@ export class MongoStorage implements IStorage {
         const coll = this.db.collection(collInfo.name) as Collection<MenuItem>;
         // Case-insensitive search for category field
         const items = await coll.find({ 
-          category: { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } 
+          $or: [
+            { category: { $regex: new RegExp(`^${normalizedCategory}$`, 'i') } },
+            { name: { $regex: new RegExp(`${normalizedCategory.replace(/-/g, ' ')}`, 'i') } }
+          ]
         }).toArray();
         
         if (items.length > 0) {
